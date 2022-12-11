@@ -5,7 +5,7 @@ const Input = styled.input`
     border-radius: 24px;
     border: solid #E2E8F0 1px;
     background-color: #F8FAFC;
-    color: #666787;
+    color: #0F172A;
     &:hover {
         background-color: #E2E8F0;
     }
@@ -14,7 +14,7 @@ const Input = styled.input`
 function TitledTextInput({title, def}) {
     const Title = title === undefined ? 
         (<div></div>) : 
-        (<div>{title}</div>);
+        (<div className='caption'>{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
             {Title}
